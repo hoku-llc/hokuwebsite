@@ -1,5 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+}
+
+#homescreen{
+  padding: 20px;
+  text-align: center;
+  background-color: grey;
 }
 
 .App-logo {
