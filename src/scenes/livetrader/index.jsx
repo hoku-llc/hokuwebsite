@@ -31,7 +31,7 @@ const LiveTrader = () => {
 
 
     const apiUrl = "https://cattle-unified-inherently.ngrok-free.app/receive_json";
-    const ws = new WebSocket("ws://9.tcp.ngrok.io:24047");
+    const ws = new WebSocket("wss://9.tcp.ngrok.io:24047");
 
     ws.onmessage = (event) => {
       const receivedJson = JSON.parse(event.data);
