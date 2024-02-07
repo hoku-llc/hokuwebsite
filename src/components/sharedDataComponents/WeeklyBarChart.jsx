@@ -47,7 +47,7 @@ const WeeklyBarChart = ({ allTransactions }) => {
       ].getDate()}`,
       profit: allTransactions
         .filter((transaction) => {
-          const transactionTimestamp = new Date(transaction.timestamp);
+          const transactionTimestamp = (transaction.timestamp);
           return (
             transactionTimestamp >= startOfWeeks[j + 1] &&
             transactionTimestamp <= startOfWeeks[j]

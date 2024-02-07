@@ -10,7 +10,8 @@ const Recommender = ({ ticker, label, stocktype, recJson }) => {
   const calculateDuration = (stamp) => {
     if (stamp) {
       const now = new Date();
-      const startTime = new Date(stamp);
+      const utcDate = new Date(stamp)
+      const startTime = new Date(utcDate.toLocaleString());
       const durationInSeconds = Math.floor((now - startTime) / 1000);
       return durationInSeconds;
     }

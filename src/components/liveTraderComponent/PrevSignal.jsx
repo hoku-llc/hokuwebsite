@@ -8,7 +8,7 @@ const PrevSignal = ({ recJson }) => {
 
   const displaySignal = 
   recJson && Object.keys(recJson).length !== 0 ? (
-    recJson.action+" "+recJson.ticker+" "+recJson.position+" @ "+recJson.timestamp
+    recJson.action+" "+recJson.ticker+" "+recJson.position+" @ "+new Date(recJson.timestamp).toLocaleString()
   ) : (
     "No recent signals"
   )

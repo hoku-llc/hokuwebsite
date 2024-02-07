@@ -22,7 +22,7 @@ allTransactions.forEach(doc => {
   allTransactionJson.push(jsonData);
 });
 allTransactionJson = allTransactionJson.map(transaction => {
-  const dateObject = new Date(transaction.timestamp);
+  const dateObject = new Date((new Date(transaction.timestamp)).toLocaleString());
   transaction.timestamp = dateObject;
   return transaction;
 });

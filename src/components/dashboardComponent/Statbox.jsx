@@ -23,7 +23,7 @@ const Statbox = ({ title, subtitle, icon, allTrans }) => {
   const currentTime = new Date();
   const sevenDays = tickerTrans
     ? tickerTrans.filter((transaction) => {
-        const transactionTimestamp = new Date(transaction.timestamp);
+        const transactionTimestamp = (transaction.timestamp);
         return (
           transactionTimestamp >= calcDaysAgo(7) &&
           transactionTimestamp <= currentTime
@@ -33,7 +33,7 @@ const Statbox = ({ title, subtitle, icon, allTrans }) => {
 
   const thirtyDays = tickerTrans
     ? tickerTrans.filter((transaction) => {
-        const transactionTimestamp = new Date(transaction.timestamp);
+        const transactionTimestamp = (transaction.timestamp);
         return (
           transactionTimestamp >= calcDaysAgo(30) &&
           transactionTimestamp <= currentTime

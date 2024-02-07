@@ -17,7 +17,7 @@ const ProfitStatBox = ({ tickerTrans, contractPrice }) => {
   const currentTime = new Date();
   const sevenDays = tickerTrans
     ? tickerTrans.filter((transaction) => {
-        const transactionTimestamp = new Date(transaction.timestamp);
+        const transactionTimestamp = (transaction.timestamp);
         return (
           transactionTimestamp >= calcDaysAgo(7) &&
           transactionTimestamp <= currentTime
@@ -27,7 +27,7 @@ const ProfitStatBox = ({ tickerTrans, contractPrice }) => {
 
   const thirtyDays = tickerTrans
     ? tickerTrans.filter((transaction) => {
-        const transactionTimestamp = new Date(transaction.timestamp);
+        const transactionTimestamp = (transaction.timestamp);
         return (
           transactionTimestamp >= calcDaysAgo(30) &&
           transactionTimestamp <= currentTime
