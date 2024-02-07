@@ -75,8 +75,6 @@ const LiveTrader = () => {
 
     };
   }, []);
-  console.log("wee", jsonData);
-  console.log('user', authUser);
 
   if (!authUser) {
     return (
