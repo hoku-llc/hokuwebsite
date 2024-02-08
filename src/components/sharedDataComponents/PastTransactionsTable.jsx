@@ -37,8 +37,8 @@ const PastTransactionsTable = ({ data }) => {
       headerAlign: "center",
     },
     {
-      field: "leverage",
-      headerName: "Leverage",
+      field: "duration",
+      headerName: "Duration (min)",
       flex: 1,
       align: "center",
       headerAlign: "center",
